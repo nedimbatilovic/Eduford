@@ -36,6 +36,8 @@ nav img {
       -ms-flex: 1;
           flex: 1;
   text-align: right;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 .nav-links ul li {
@@ -64,6 +66,53 @@ nav img {
 
 .nav-links ul li:hover::after {
   width: 100%;
+}
+
+.burger-menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.burger-menu .line1,
+.burger-menu .line2,
+.burger-menu .line3 {
+  background-color: #fff;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 2.5px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.burger-rotate {
+  background: none;
+}
+
+.burger-rotate .line1 {
+  -webkit-transform: rotate(-45deg) translate(1px, 2px) scaleX(2);
+          transform: rotate(-45deg) translate(1px, 2px) scaleX(2);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.burger-rotate .line2 {
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.burger-rotate .line3 {
+  -webkit-transform: rotate(45deg) translate(1px, -2px) scaleX(2);
+          transform: rotate(45deg) translate(1px, -2px) scaleX(2);
+  margin-left: 0px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .text-box {
@@ -110,15 +159,26 @@ nav img {
 }
 
 @media screen and (max-width: 700px) {
+  .burger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .nav-links {
     position: absolute;
     background: #f44336;
     height: 100vh;
     width: 200px;
+    border-radius: 4px;
     top: 0;
     right: -200px;
     text-align: left;
     z-index: 2;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+  }
+  .nav-links.active {
+    right: 0;
   }
   .nav-links ul {
     padding: 30px;
