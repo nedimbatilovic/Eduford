@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -189,5 +191,49 @@ nav img {
   .text-box h1 {
     font-size: 20px;
   }
+}
+
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.course h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.course p {
+  color: #555555;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course-col {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  background: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+}
+
+.course-col h3 {
+  font-weight: 600;
+  margin: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
