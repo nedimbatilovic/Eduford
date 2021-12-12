@@ -380,6 +380,7 @@ nav img {
 }
 
 .icons i {
+  font-size: 30px;
   color: #f44336;
   margin: 0 13px;
   cursor: pointer;
