@@ -101,7 +101,7 @@ nav {
 
 .burger-rotate {
     .line1 {
-        transform: rotate(-45deg) translate(1px, 2px) scaleX(2);
+        transform: rotate(45deg) translate(-7px, 15px);
         transition: 0.3s ease-in-out;
     }
 
@@ -111,7 +111,7 @@ nav {
     }
 
     .line3 {
-        transform: rotate(45deg) translate(1px, -2px) scaleX(2);
+        transform: rotate(-45deg) translate(-7px, 15px);
         margin-left: 0px;
         transition: 0.3s ease-in-out;
     }
@@ -282,6 +282,11 @@ nav {
     cursor: pointer;
     display: flex;
     padding: 25px;
+    transition: 0.5s;
+    &:hover {
+        box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+    }
+
     img {
         height: 40px;
         width: 40px;
@@ -296,6 +301,46 @@ nav {
 
     i {
         color: #f44336;
+    }
+}
+
+// call to action
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../eduford_img/banner2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    h1 {
+        color: white;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+}
+
+// footer section
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    h4 {
+        font-size: 36px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}
+
+.icons {
+    i {
+        color: #f44336;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
     }
 }
 
@@ -344,6 +389,12 @@ nav {
         img {
             margin-left: 0px;
             margin-right: 15px;
+        }
+    }
+
+    .cta {
+        h1 {
+            font-size: 24px;
         }
     }
 }
