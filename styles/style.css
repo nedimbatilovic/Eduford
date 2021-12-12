@@ -401,7 +401,7 @@ nav img {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     top: 0;
-    right: -600px;
+    right: -250px;
     text-align: left;
     z-index: 2;
     -webkit-transition: ease-in-out 0.5s;
