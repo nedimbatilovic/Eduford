@@ -173,7 +173,7 @@ nav img {
     width: 200px;
     border-radius: 4px;
     top: 0;
-    right: -200px;
+    right: -260px;
     text-align: left;
     z-index: 2;
     -webkit-transition: ease-in-out 0.5s;
@@ -230,10 +230,31 @@ nav img {
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.course-col:hover {
+  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.course-col p {
+  text-align: left;
 }
 
 .course-col h3 {
+  text-align: center;
   font-weight: 600;
   margin: 10px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

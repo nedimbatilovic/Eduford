@@ -148,11 +148,10 @@ nav {
         width: 200px;
         border-radius: 4px;
         top: 0;
-        right: -200px;
+        right: -260px;
         text-align: left;
         z-index: 2;
         transition: ease-in-out 0.5s;
-
         &.active {
             right: 0;
         }
@@ -204,8 +203,24 @@ nav {
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
+    transition: 0.3s;
+    &:hover {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+        text-align: left;
+    }
+
     h3 {
+        text-align: center;
         font-weight: 600;
         margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
     }
 }
