@@ -173,7 +173,7 @@ nav img {
     width: 200px;
     border-radius: 4px;
     top: 0;
-    right: -260px;
+    right: -600px;
     text-align: left;
     z-index: 2;
     -webkit-transition: ease-in-out 0.5s;
@@ -214,9 +214,15 @@ nav img {
 }
 
 .row {
-  margin-top: 5%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -294,5 +300,42 @@ nav img {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.facilities {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities-col {
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 4%;
+}
+
+.facilities-col img {
+  width: 100%;
+  height: 65%;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.facilities-col img:hover {
+  -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.facilities-col p {
+  padding: 0;
+}
+
+.facilities-col h3 {
+  margin: 5px 0 16px 0;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
