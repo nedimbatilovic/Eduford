@@ -257,4 +257,42 @@ nav img {
             flex-direction: column;
   }
 }
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-col {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  border-radius: 10px;
+  margin: 30px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.campus-col:hover {
+  -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.campus-col img {
+  width: 100%;
+  height: 100%;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  padding-top: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /*# sourceMappingURL=style.css.map */
