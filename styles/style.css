@@ -501,6 +501,7 @@ nav img {
 
 .comment-box {
   border: 1px solid #494949;
+  border-radius: 10px;
   margin: 50px 0;
   padding: 10px 20px;
 }
@@ -514,9 +515,11 @@ nav img {
   width: 100%;
   padding: 10px;
   margin: 15px 0;
+  border-radius: 3px;
   border: none;
   outline: none;
-  background: #f0f0f0;
+  background-color: #ebebeb;
+  resize: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -562,6 +565,9 @@ nav img {
     margin-right: 15px;
   }
   .cta h1 {
+    font-size: 24px;
+  }
+  .sub-header h1 {
     font-size: 24px;
   }
 }
