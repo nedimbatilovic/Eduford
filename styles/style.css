@@ -444,6 +444,81 @@ nav img {
   color: white;
 }
 
+.blog-content {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.blog-left {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.blog-left img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.blog-left h2 {
+  color: black;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.blog-left p {
+  padding-left: 0;
+}
+
+.blog-right {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+.blog-right h3 {
+  background: #f44336;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.blog-right div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #494949;
+  padding: 8px;
+}
+
+.comment-box {
+  border: 1px solid #494949;
+  margin: 50px 0;
+  padding: 10px 20px;
+}
+
+.comment-box h3 {
+  text-align: left;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+
 @media screen and (max-width: 700px) {
   .burger-menu {
     display: -webkit-box;
